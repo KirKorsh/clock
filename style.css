@@ -9,44 +9,95 @@ body{
     -webkit-font-smoothing: antialiased;
     -webkit-osx-font-smoothing: grayscale;
 }
+
 img{
     width: 50px;
     height: 50px;
 }
-.content{
-    background: #4e4e4e;
+
+*{
+    box-sizing: border-box;
+}
+
+.content{ 
     border-radius: 8px;
     padding: 30px 200px;
-    box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-conten:center;
+    justify-content:center;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
 }
+
 .countdown{
-    font-size: 100px;
+    border-radius: 10px;
+    font-size: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    gap: 20px;
 }
+
 .timer{
-    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 30px;
+    
+}
+
+.info{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+.info input{
+    background: none;
+    border: none;
+    width: 40px;
+    text-align: center;
+    color:rgb(247, 247, 247);
+}
+
+\\сложно 
+.info input::-webkit-outer-spin-button,
+.info input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .num{
-   
-}
-.num-dop{
-    display: none;
+    border-radius: 10px;
+    background: #2d2d2d;
+    width: 150px;
+    text-align: center;
 }
 
 .dots{
     color: #32ce2f;
+    font-size: 150px;
+}
+
+.ico{
+    font-size: 30px;
+}
+button{
+    color:aliceblue;
+    background-color: #2d2d2d;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight:700 ;
+    gap:10px;
+    padding: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-ico img{
+    width: 50px;
+    height: 50px;
 }
