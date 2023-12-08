@@ -20,6 +20,7 @@ img{
 }
 
 .content{ 
+    background-color:#1f1f1f; ;
     border-radius: 8px;
     padding: 30px 200px;
     display: flex;
@@ -72,7 +73,8 @@ img{
 .num{
     border-radius: 10px;
     background: #2d2d2d;
-    width: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
 }
 
@@ -100,4 +102,28 @@ button{
 .btn-ico img{
     width: 50px;
     height: 50px;
+}
+
+@media screen and (max-width: 450px) {
+    .content{  
+        padding: 30px 10px;      
+    }
+    .countdown{
+        font-size: 40px; /* размер циферблата*/
+
+    }
+    .info{
+        font-size: 14px;
+    }
+    .num{
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+    
+    .dots{
+        font-size: 37px;
+    }
+    
 }
