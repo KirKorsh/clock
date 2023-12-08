@@ -6,12 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Таймер медитации</title>
         <link rel="stylesheet" href="./style.css"/>
-        <script src="./code.js" defer></script>
+        <script src="./app.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap"
               rel="stylesheet">     
     </head>
+    <audio id="music" src=".\music\1.mp3" autoplay loop ></audio>        
+
     <body>
       <div class="content">
 
@@ -47,18 +49,24 @@
         </form> 
 
         <form class="settings" onsubmit="app.submit(settings-event)">
-
-            <div class="button b2" id="button-tic">
-                <input type="checkbox" class="checkbox" />
-                <div class="knobs"></div>
-                <div class="layer"></div>
-            </div>
-            <div class="button b2" id="button-music">
-                <input type="checkbox" class="checkbox" />
-                <div class="knobs"></div>
-                <div class="layer"></div>
+            <div class="btn-wrapper">
+                Тик
+                <div class="btn-settings" id="button-tic">
+                    <input type="checkbox" class="checkbox" />
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                </div>
             </div>
 
+            <div class="btn-wrapper">
+                Музыка
+                <div class="btn-settings" id="button-music">
+                    <input type="checkbox" class="checkbox" id="chbx-music" />
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                    <script src="music.js"></script>
+                </div>
+            </div>
         </form>
 
       </div>  
