@@ -14,10 +14,12 @@
     </head>
     <body>
       <div class="content">
+
         <div class="ico">
-            <img src="https://www.clipartmax.com/png/full/232-2324116_vector-green-bird-logo-vector-graphics.png"
-                alt="">Cheeel
+            <img src="./icons/logo.png"alt="Логотип">
+            Cheeel
         </div>
+
         <form class="timer" onsubmit="app.submit(event)">
             <div class = "info">
                 Установить медитацию на
@@ -29,6 +31,7 @@
                 />
                 минут
             </div>
+
             <div class="countdown">
                 <div class="num" id="minuts-tens">0</div>
                 <div class="num" id="minuts">0</div>
@@ -36,11 +39,28 @@
                 <div class="num" id="sec-tens">0</div>
                 <div class="num"id="sec">0</div>
             </div>
+
             <button class="btn-start">
                 <img src="./icons/icon-btn.png" alt="" class="btn-ico">
                 Начать отсчёт
             </button>
         </form> 
+
+        <form class="settings" onsubmit="app.submit(settings-event)">
+
+            <div class="button b2" id="button-tic">
+                <input type="checkbox" class="checkbox" />
+                <div class="knobs"></div>
+                <div class="layer"></div>
+            </div>
+            <div class="button b2" id="button-music">
+                <input type="checkbox" class="checkbox" />
+                <div class="knobs"></div>
+                <div class="layer"></div>
+            </div>
+
+        </form>
+
       </div>  
     </body>
 
