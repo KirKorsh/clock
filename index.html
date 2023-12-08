@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap"
               rel="stylesheet">     
     </head>
-    <audio id="music" src=".\music\1.mp3" autoplay loop ></audio>        
+    <audio id="music" src=".\music\1.mp3"  loop volume = 0></audio>        
 
     <body>
       <div class="content">
@@ -52,7 +52,7 @@
             <div class="btn-wrapper">
                 Тик
                 <div class="btn-settings" id="button-tic">
-                    <input type="checkbox" class="checkbox" />
+                    <input type="checkbox" class="checkbox" id="chbx-tic"/>
                     <div class="knobs"></div>
                     <div class="layer"></div>
                 </div>
@@ -61,7 +61,7 @@
             <div class="btn-wrapper">
                 Музыка
                 <div class="btn-settings" id="button-music">
-                    <input type="checkbox" class="checkbox" id="chbx-music" />
+                    <input type="checkbox" class="checkbox" id="chbx-music"checked="checked" />
                     <div class="knobs"></div>
                     <div class="layer"></div>
                     <script src="music.js"></script>

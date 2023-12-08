@@ -13,11 +13,11 @@ class MusicPlayer {
     handleCheckboxChange() {
       // Если чекбокс выключен, устанавливаем уровень громкости в 0
       if (!this.checkbox_music.checked) {
-        this.music.volume = 0.1;
+        this.music.play();
         console.log("1");
       } else {
         // Если чекбокс включен, устанавливаем уровень громкости в 1 (или другое значение по вашему выбору)
-        this.music.volume = 0.0;
+        this.music.pause();
         console.log("0");
       }
     }
